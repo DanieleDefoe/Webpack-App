@@ -13,7 +13,10 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({ title: 'Restaurant Page' }),
+    new HtmlWebpackPlugin({
+      title: 'Restaurant Page',
+      favicon: './src/images/favicon.svg',
+    }),
   ],
 
   devtool: 'inline-source-map',
